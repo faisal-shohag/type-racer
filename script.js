@@ -63,7 +63,7 @@ const typeHandler = () => {
       car2Position += 10;
       typeHandler();
       typedWordInput.value = "";
-    
+
       carTwo.style.left = car2Position + "%";
       if (car2Position >= 78) {
         gameWinController("You win!!!");
@@ -78,12 +78,12 @@ const constantCarOneMove = () => {
       clearInterval(carOneMove);
     }
 
-    if (car1Position >=78) {
+    if (car1Position >= 78) {
       isGameOver = true;
       gameWinController("You Lost!");
     }
 
-    car1Position += 0.3;
+    car1Position += 0.5;
     carOne.style.left = car1Position + "%";
   }, 100);
 };
@@ -121,9 +121,7 @@ const playAgain = () => {
   wordCount = 0;
   typedWordInput.removeAttribute("disabled");
 
-  setTimeout(() => {
-    startGame();
-  }, 1000);
+  startGame();
   modal.close();
 };
 

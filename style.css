@@ -75,8 +75,8 @@ body {
   }
   
   #car-2 {
-    left: -10%; 
     bottom: 20%; 
+    left: -10%; 
   }
   
   #car-1 img, #car-2 img {
@@ -101,7 +101,7 @@ body {
     padding: 10px;
     border-radius: 5px;
     outline: none;
-
+    font-size: 30px;
   }
 
 
